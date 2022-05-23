@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Listening Party</title>
+        <style>
+            .spinner {
+                position: relative;
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+            }
+            .spinner::before,
+            .spinner::after{
+                content: "";
+                position: absolute;
+                border-radius: inherit;
+            }
+            .spinner::before {
+                width: 100%;
+                height: 100%;
+                background-image:linear-gradient( 0deg,#ff00cc 0%, #333399 100%);
+                animation: spin .5s infinite linear;
+            }
+            .spinner::after {
+                width: 85%;
+                height: 85%;
+                background-color: #151515;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            @keyframes spin {
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+            h1 {
+                color: red;
+                text-align: center;
+            }
+            h3 {
+                color: #FFFF66;
+                text-align: center;
+            }
+            h4 {
+                color: #CCFF00;
+                text-align: center;
+            }
+            p {
+                color: white;
+                text-align: center;
+            }
+            a:link { color: red;}
+            a:visited { color: red;}
+        </style>
+    </head>
+    <body style="background-color:blue">
+        <h1><a href=main.html>KANYE WEST</a></h1><br>
+        <h3>Listening Party!!!</h3><br><br>
+        <div align="center">
+            <div class="spinner"></div>
+            <h4>(아티스트 - 앨범명 - 수록곡 제목)</h4>
+            <h4>Kanye West - Graduation - Stronger</h4> 
+            <audio src="music/stronger.mp3" autoplay controls></audio>
+            <p>-----------------------------------------</p>
+            <h4>Kanye West - My Beautiful Dark Twisted Fantasy - Runaway</h4>
+            <audio src="music/Runaway.mp3" autoplay controls></audio>
+            <p>-----------------------------------------</p>
+            <h4>Kanye West - Late Registration - Gold Digger (Feat. Jamie Foxx)</h4>
+            <audio src="music/Gold_Digger.mp3" autoplay controls></audio>
+            <p>-----------------------------------------</p>
+            <h4>Kanye West - The College Dropout - All Falls Down</h4>
+            <audio src="music/All_Falls_Down.mp3" autoplay controls></audio>
+            <p>-----------------------------------------</p>
+            <h4>Kanye West - My Beautiful Dark Twisted Fantasy - All Of The Lights (Feat. Rihanna, Kid Cudi, Fergie, John Legend, Ryan Leslie, Tony Williams, Elly Jackson, Alicia Keys, Elton John)</h4>
+            <audio src="music/All_Of_The_Lights.mp3" autoplay controls></audio>
+            <p>-----------------------------------------</p>
+            <h4>Kanye West - Donda - Jail</h4>
+            <audio src="music/Jail.mp3" autoplay controls></audio>
+            <p>-----------------------------------------</p>
+            <h4>Kanye West - Donda - Praise God</h4>
+            <audio src="music/Praise_God.mp3" autoplay controls></audio>
+            <p>-----------------------------------------</p>
+            <h4>The Game, Kanye West - Eazy - Eazy</h4>
+            <audio src="music/EAZY.mp3" autoplay controls></audio>
+        </div>
+    </body>
+</html>
